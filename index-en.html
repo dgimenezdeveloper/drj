@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Dr. J Web Developers">
+  <title>DrJ Web Designers</title>
+  <!-- BOOTSTARP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- NORMALIZE -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- CSS CUSTOMIZADO -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="./img/logo-drj.png" type="image/x-icon">
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- FONTAWESOME JS -->
+  <script src="https://kit.fontawesome.com/abcf2eeeee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="navbar navbar-dark bg-dark fixed-top texto-blanco">
+      <div class="container-fluid  flex-nowrap">
+        <a class="navbar-brand" href="index-en.html">
+          <img src="./img/logo-drj.png" alt="Dr.J developers's Logo">
+        </a>
+        <div>
+          <h1 class="text-center">Development full stack Python</h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dr.J Developers</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre-drj" rel="noopener noreferrer" title="Acerca de">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos" rel="noopener noreferrer" title="Proyectos">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto" rel="noopener noreferrer" title="Contacto">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Language
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="index.html">Español</a></li>
+                  <li><a class="dropdown-item" href="index-en.html">English</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Seccion Hero -->
+  <section class="hero align-items-stretch">
+    <div class="hero-principal">
+      <img class="hero-imagen-principal" src="./img/hombre-web-recorte.png" alt="Imagen principal sección hero">
+      <h2 class="texto-blanco">Believe, Create!</h2>
+      <h3>From your mind to the net</h3>
+    </div>
+    <div class="hero-inferior">
+      <img class="img-fluid" src="./img/frontend-4342425_1280-removebg-preview.png" alt="Imagen monitores">
+    </div>
+  </section>
+
+  <!-- Seccion Sobre Dr.J -->
+  <section id="sobre-drj" class="sobre-drj seccion-clara">
+    <div class="contenedor">
+      <h2 class="seccion-titulo">in Dr.J Devs...</h2>
+      <p class="seccion-texto">
+        We stand out for being a work team that seeks excellence <br>
+        We have various tools and knowledge of the most advanced technologies, to take the user experience to another level. Join us and tell us what you want, we do the magic.
+        "We are three independent developers who, from a very young age, dreamed of creating a <em>services company.
+          digital media</em> to help entrepreneurs achieve the goal of having brands with a professional presence in
+        Internet. <br>
+        After a lot of work we have created this company to offer a wide range of
+         possibilities to achieve this objective in a <em>professional and personalized manner</em> without ever leaving
+         aside the human aspect."*
+      </p>
+      <p>
+        *This website was designed during the Fullstack Python course
+         dictated by <a href="https://www.buenosaires.gob.ar/educacion/codocodo/el-programa" target="_blank"
+           rel="noopener noreferrer">codo a codo</a>,
+         during the course of it, as a frontend project.
+      </p>
+    </div>
+  </section>
+
+  <!-- Seccion Proyectos -->
+  <section id="proyectos" class="proyectos-recientes d-flex flex-column">
+    <h2 class="seccion-titulo texto-blanco">Our projects</h2>
+    <h3 class="seccion-descripcion texto-blanco">These are the models of some of our recent projects</h3>
+    <!-- Gallería de Proyectos -->
+    <div class="container text-center proyectos-contenedor">
+      <div class="row">
+        <!-- Proyecto 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="/img/proyectos/studentsCoffee.png" alt="Web de cafetería The Studentś Coffee">
+            <div class="overlay texto-blanco">
+              <p>The Student's Coffee</p>
+              <div class="iconos-contenedor">
+                <div class="iconos-contenedor">
+                  <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://studentscoffee.netlify.app/">
+                    <i class="fa-brands fa-chrome"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="/img/proyectos/ricardoRodriguez.png" alt="Portafolio Ricardo Rodriguez">
+            <div class="overlay texto-blanco">
+              <p>Ricardo Rodriguez's Portfolio </p>
+              <div class="iconos-contenedor">
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/ElToqueRicardo">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://eltoquericardo.github.io/ricardo-rodriguez/index.html">
+                    <i class="fa-brands fa-chrome"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="/img/proyectos/daseg-portfolio.png" alt="Web de cafetería The Studentś Coffee">
+            <div class="overlay texto-blanco">
+              <p>Daseg's Portfolio</p>
+              <div class="iconos-contenedor">
+                <div class="iconos-contenedor">
+                  <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://dgimenezdeveloper.netlify.app/">
+                    <i class="fa-brands fa-chrome"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto seccion-clara">
+    <div class="container">
+      <div class="container text-center d-flex justify-content-evenly">
+        <div class="row d-flex text-center">
+          
+          <div class="col-12 descripcion seccion-texto">
+            Contact us and we will design your project according to your expectations.
+          </div>
+        </div>
+      </div>
+      <div class="seccion-titulo">Our office</div>
+      <!-- Iframe -->
+      <div class="col-12 d-flex justify-content-center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3128.987905013781!2d-0.48842808530858256!3d38.34926198667259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6237ad1acac2b1%3A0x4a6d9cb976b4fe78!2sC.%20Pintor%20Vel%C3%A1zquez%2C%206%2C%2003004%20Alicante%20(Alacant)%2C%20Alicante%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1664455698925!5m2!1ses!2sar"
+          width="600" height="450"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <hr>
+      <!-- Formulario -->
+      <div class="col-12">
+        <div class="seccion-titulo">Write to us</div>
+        <form id="contact-form" action="https://formspree.io/f/myyvdvvq" method="post" target="_blank" rel="noopener noreferrer">
+          <div class="col-12">
+            <label for="inputEmpresa" class="form-label">Company</label>
+            <input type="text" name="nombre" class="form-control" id="inputEmpresa" placeholder="Nombre Empresa" required>
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" name="domicilio" class="form-control" id="inputAddress" placeholder="Calle, numero" required>
+          </div>
+          <div class="d-flex">
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" name="ciudad" class="form-control" id="inputCity" placeholder="Ciudad" required>
+            </div>
+            <div class="col-2">
+              <label for="inputZip" class="form-label">ZIP Code</label>
+              <input type="text" name="cp" class="form-control" id="inputZip" placeholder="CP" required>
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Country</label>
+              <select id="inputState" name="pais" class="form-select" required>
+                <option value="">Select</option>
+                <option value="AF">Afganistán</option>
+                <option value="AL">Albania</option>
+                <option value="DE">Alemania</option>
+                <option value="AD">Andorra</option>
+                <option value="AO">Angola</option>
+                <option value="AI">Anguilla</option>
+                <option value="AQ">Antártida</option>
+                <option value="AG">Antigua y Barbuda</option>
+                <option value="AN">Antillas Holandesas</option>
+                <option value="SA">Arabia Saudí</option>
+                <option value="DZ">Argelia</option>
+                <option value="AR">Argentina</option>
+                <option value="AM">Armenia</option>
+                <option value="AW">Aruba</option>
+                <option value="AU">Australia</option>
+                <option value="AT">Austria</option>
+                <option value="AZ">Azerbaiyán</option>
+                <option value="BS">Bahamas</option>
+                <option value="BH">Bahrein</option>
+                <option value="BD">Bangladesh</option>
+                <option value="BB">Barbados</option>
+                <option value="BE">Bélgica</option>
+                <option value="BZ">Belice</option>
+                <option value="BJ">Benin</option>
+                <option value="BM">Bermudas</option>
+                <option value="BY">Bielorrusia</option>
+                <option value="MM">Birmania</option>
+                <option value="BO">Bolivia</option>
+                <option value="BA">Bosnia y Herzegovina</option>
+                <option value="BW">Botswana</option>
+                <option value="BR">Brasil</option>
+                <option value="BN">Brunei</option>
+                <option value="BG">Bulgaria</option>
+                <option value="BF">Burkina Faso</option>
+                <option value="BI">Burundi</option>
+                <option value="BT">Bután</option>
+                <option value="CV">Cabo Verde</option>
+                <option value="KH">Camboya</option>
+                <option value="CM">Camerún</option>
+                <option value="CA">Canadá</option>
+                <option value="TD">Chad</option>
+                <option value="CL">Chile</option>
+                <option value="CN">China</option>
+                <option value="CY">Chipre</option>
+                <option value="VA">Ciudad del Vaticano (Santa Sede)</option>
+                <option value="CO">Colombia</option>
+                <option value="KM">Comores</option>
+                <option value="CG">Congo</option>
+                <option value="CD">Congo, República Democrática del</option>
+                <option value="KR">Corea</option>
+                <option value="KP">Corea del Norte</option>
+                <option value="CI">Costa de Marfíl</option>
+                <option value="CR">Costa Rica</option>
+                <option value="HR">Croacia (Hrvatska)</option>
+                <option value="CU">Cuba</option>
+                <option value="DK">Dinamarca</option>
+                <option value="DJ">Djibouti</option>
+                <option value="DM">Dominica</option>
+                <option value="EC">Ecuador</option>
+                <option value="EG">Egipto</option>
+                <option value="SV">El Salvador</option>
+                <option value="AE">Emiratos Árabes Unidos</option>
+                <option value="ER">Eritrea</option>
+                <option value="SI">Eslovenia</option>
+                <option value="ES">España</option>
+                <option value="US">Estados Unidos</option>
+                <option value="EE">Estonia</option>
+                <option value="ET">Etiopía</option>
+                <option value="FJ">Fiji</option>
+                <option value="PH">Filipinas</option>
+                <option value="FI">Finlandia</option>
+                <option value="FR">Francia</option>
+                <option value="GA">Gabón</option>
+                <option value="GM">Gambia</option>
+                <option value="GE">Georgia</option>
+                <option value="GH">Ghana</option>
+                <option value="GI">Gibraltar</option>
+                <option value="GD">Granada</option>
+                <option value="GR">Grecia</option>
+                <option value="GL">Groenlandia</option>
+                <option value="GP">Guadalupe</option>
+                <option value="GU">Guam</option>
+                <option value="GT">Guatemala</option>
+                <option value="GY">Guayana</option>
+                <option value="GF">Guayana Francesa</option>
+                <option value="GN">Guinea</option>
+                <option value="GQ">Guinea Ecuatorial</option>
+                <option value="GW">Guinea-Bissau</option>
+                <option value="HT">Haití</option>
+                <option value="HN">Honduras</option>
+                <option value="HU">Hungría</option>
+                <option value="IN">India</option>
+                <option value="ID">Indonesia</option>
+                <option value="IQ">Irak</option>
+                <option value="IR">Irán</option>
+                <option value="IE">Irlanda</option>
+                <option value="BV">Isla Bouvet</option>
+                <option value="CX">Isla de Christmas</option>
+                <option value="IS">Islandia</option>
+                <option value="KY">Islas Caimán</option>
+                <option value="CK">Islas Cook</option>
+                <option value="CC">Islas de Cocos o Keeling</option>
+                <option value="FO">Islas Faroe</option>
+                <option value="HM">Islas Heard y McDonald</option>
+                <option value="FK">Islas Malvinas</option>
+                <option value="MP">Islas Marianas del Norte</option>
+                <option value="MH">Islas Marshall</option>
+                <option value="UM">Islas menores de Estados Unidos</option>
+                <option value="PW">Islas Palau</option>
+                <option value="SB">Islas Salomón</option>
+                <option value="SJ">Islas Svalbard y Jan Mayen</option>
+                <option value="TK">Islas Tokelau</option>
+                <option value="TC">Islas Turks y Caicos</option>
+                <option value="VI">Islas Vírgenes (EEUU)</option>
+                <option value="VG">Islas Vírgenes (Reino Unido)</option>
+                <option value="WF">Islas Wallis y Futuna</option>
+                <option value="IL">Israel</option>
+                <option value="IT">Italia</option>
+                <option value="JM">Jamaica</option>
+                <option value="JP">Japón</option>
+                <option value="JO">Jordania</option>
+                <option value="KZ">Kazajistán</option>
+                <option value="KE">Kenia</option>
+                <option value="KG">Kirguizistán</option>
+                <option value="KI">Kiribati</option>
+                <option value="KW">Kuwait</option>
+                <option value="LA">Laos</option>
+                <option value="LS">Lesotho</option>
+                <option value="LV">Letonia</option>
+                <option value="LB">Líbano</option>
+                <option value="LR">Liberia</option>
+                <option value="LY">Libia</option>
+                <option value="LI">Liechtenstein</option>
+                <option value="LT">Lituania</option>
+                <option value="LU">Luxemburgo</option>
+                <option value="MK">Macedonia, Ex-República Yugoslava de</option>
+                <option value="MG">Madagascar</option>
+                <option value="MY">Malasia</option>
+                <option value="MW">Malawi</option>
+                <option value="MV">Maldivas</option>
+                <option value="ML">Malí</option>
+                <option value="MT">Malta</option>
+                <option value="MA">Marruecos</option>
+                <option value="MQ">Martinica</option>
+                <option value="MU">Mauricio</option>
+                <option value="MR">Mauritania</option>
+                <option value="YT">Mayotte</option>
+                <option value="MX">México</option>
+                <option value="FM">Micronesia</option>
+                <option value="MD">Moldavia</option>
+                <option value="MC">Mónaco</option>
+                <option value="MN">Mongolia</option>
+                <option value="MS">Montserrat</option>
+                <option value="MZ">Mozambique</option>
+                <option value="NA">Namibia</option>
+                <option value="NR">Nauru</option>
+                <option value="NP">Nepal</option>
+                <option value="NI">Nicaragua</option>
+                <option value="NE">Níger</option>
+                <option value="NG">Nigeria</option>
+                <option value="NU">Niue</option>
+                <option value="NF">Norfolk</option>
+                <option value="NO">Noruega</option>
+                <option value="NC">Nueva Caledonia</option>
+                <option value="NZ">Nueva Zelanda</option>
+                <option value="OM">Omán</option>
+                <option value="NL">Países Bajos</option>
+                <option value="PA">Panamá</option>
+                <option value="PG">Papúa Nueva Guinea</option>
+                <option value="PK">Paquistán</option>
+                <option value="PY">Paraguay</option>
+                <option value="PE">Perú</option>
+                <option value="PN">Pitcairn</option>
+                <option value="PF">Polinesia Francesa</option>
+                <option value="PL">Polonia</option>
+                <option value="PT">Portugal</option>
+                <option value="PR">Puerto Rico</option>
+                <option value="QA">Qatar</option>
+                <option value="UK">Reino Unido</option>
+                <option value="CF">República Centroafricana</option>
+                <option value="CZ">República Checa</option>
+                <option value="ZA">República de Sudáfrica</option>
+                <option value="DO">República Dominicana</option>
+                <option value="SK">República Eslovaca</option>
+                <option value="RE">Reunión</option>
+                <option value="RW">Ruanda</option>
+                <option value="RO">Rumania</option>
+                <option value="RU">Rusia</option>
+                <option value="EH">Sahara Occidental</option>
+                <option value="KN">Saint Kitts y Nevis</option>
+                <option value="WS">Samoa</option>
+                <option value="AS">Samoa Americana</option>
+                <option value="SM">San Marino</option>
+                <option value="VC">San Vicente y Granadinas</option>
+                <option value="SH">Santa Helena</option>
+                <option value="LC">Santa Lucía</option>
+                <option value="ST">Santo Tomé y Príncipe</option>
+                <option value="SN">Senegal</option>
+                <option value="SC">Seychelles</option>
+                <option value="SL">Sierra Leona</option>
+                <option value="SG">Singapur</option>
+                <option value="SY">Siria</option>
+                <option value="SO">Somalia</option>
+                <option value="LK">Sri Lanka</option>
+                <option value="PM">St Pierre y Miquelon</option>
+                <option value="SZ">Suazilandia</option>
+                <option value="SD">Sudán</option>
+                <option value="SE">Suecia</option>
+                <option value="CH">Suiza</option>
+                <option value="SR">Surinam</option>
+                <option value="TH">Tailandia</option>
+                <option value="TW">Taiwán</option>
+                <option value="TZ">Tanzania</option>
+                <option value="TJ">Tayikistán</option>
+                <option value="TF">Territorios franceses del Sur</option>
+                <option value="TP">Timor Oriental</option>
+                <option value="TG">Togo</option>
+                <option value="TO">Tonga</option>
+                <option value="TT">Trinidad y Tobago</option>
+                <option value="TN">Túnez</option>
+                <option value="TM">Turkmenistán</option>
+                <option value="TR">Turquía</option>
+                <option value="TV">Tuvalu</option>
+                <option value="UA">Ucrania</option>
+                <option value="UG">Uganda</option>
+                <option value="UY">Uruguay</option>
+                <option value="UZ">Uzbekistán</option>
+                <option value="VU">Vanuatu</option>
+                <option value="VE">Venezuela</option>
+                <option value="VN">Vietnam</option>
+                <option value="YE">Yemen</option>
+                <option value="YU">Yugoslavia</option>
+                <option value="ZM">Zambia</option>
+                <option value="ZW">Zimbabue</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Ingrese email" required>
+          </div>
+          
+          <div>Message</div>
+          <div class="form-floating col-6">
+            <textarea class="form-control" 
+                      name="mensaje"
+                      placeholder="Escribe tu consulta aquí" 
+                      id="floatingTextarea2" 
+                      style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Write here</label>
+          </div>
+          
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" name="terminos" type="checkbox" id="gridCheck" required>
+              <label class="form-check-label texto" for="gridCheck">
+                <a href="#">I accept terms and conditions</a>
+              </label>
+            </div>
+          </div>
+          <div class="col-12"> 
+            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+        
+      </div>
+      <hr>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="seccion-oscura d-flex flex-column align-items-center justify-contents-center">
+    <img class="footer-logo" src="./img/logo-drj.png" alt="logo de Dr.J developers">
+    <p class="footer-texto text-center texto-blanco">
+      We create and design your website.
+    </p>
+    <hr>
+    <div class="iconos-redes-sociales d-flex flex-warp align-items-center justify-contents-center">
+      <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="http://www.github.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="http://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="mailto:dgimenez.developer@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+    <div class="derechos-de-autor">
+      <p>
+        Developed by Dr.J Devs (2023) <i class="fa fa-copyright" aria-hidden="true"></i> <br> All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="./js/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

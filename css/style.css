@@ -1,0 +1,295 @@
+:root {
+  --color__fondo: rgba(11, 25, 35, 255);
+}
+
+
+body {
+  background-color: var(--color__fondo);
+}
+
+.navbar {
+  background-color: var(--color__fondo) !important;
+}
+
+.navbar img {
+  width: 130px;
+}
+
+/* Estilos generales */
+
+section,
+.hero-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+iframe {
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+}
+
+.seccion-clara {
+  background-color: antiquewhite;
+  color: black;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.titulo {
+  font-size: 2rem;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
+.texto-blanco {
+  color: #fff 
+}
+
+.texto-negro {
+  color: #000;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: wheat;
+}
+
+
+/* Seccion Hero */
+.hero {
+  min-height: 450px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding: 3rem;
+}
+
+.hero-imagen-principal {
+  width: 840px;
+  border-radius: 15px;
+  padding-top: 4.5rem;
+  padding-bottom: 1rem;
+}
+
+.hero-principal h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.hero-principal h3 {
+  font-size: 1.5rem;
+  color: wheat;
+  font-weight: 400;
+}
+
+.hero-inferior {
+  padding-bottom: 2rem;
+}
+
+/* Sobre Dr.J */
+.sobre-drj {
+  height: 800px;
+  padding: 10px;
+}
+
+.sobre-drj .contenedor {
+  max-width: 750px;
+  text-align: justify;
+}
+
+/* Proyectos */
+.proyectos-recientes {
+  padding: 30px;
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.proyectos-contenedor {
+  padding-bottom: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.3s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto img {
+  border-radius: 40px;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+  transform: scale(1.2);
+  border-radius: 50px;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay i {
+  color: #fff;
+  font-size: 40px;
+  margin: 10px;
+}
+
+.overlay .fa-github:hover {
+  color: rgb(60, 60, 198);
+}
+
+.overlay .fa-chrome:hover {
+  color: rgb(60, 60, 198);
+}
+
+/* Contacto */
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 1rem;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto button {
+  color: var(--color__fondo);
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid var(--color__fondo);
+  padding: 1em 3.5em;
+  margin: 10px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contacto button:hover {
+  background-color: #fff;
+  border: 2px solid blue;
+  color: blue;
+}
+
+.contacto button i {
+  font-size: 1.3rem;
+}
+
+/* Footer */
+
+footer {
+  min-height: 500px;
+}
+
+footer hr {
+  border: 1px solid white;
+  width: 80%;
+}
+
+.footer-logo {
+  width: 150px;
+  margin: 10px;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.iconos-redes-sociales {
+  padding: 3rem;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  color: #fff;
+  background-color: #fff;
+  border: 2px solid rgb(60, 60, 198);
+}
+
+.iconos-redes-sociales i {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in;
+}
+
+.iconos-redes-sociales a:hover i {
+  color: rgb(60, 60, 198);
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+/* Adaptable */
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 16px;
+  }
+
+  .overlay i {
+    font-size: 30px;
+  }
+}
