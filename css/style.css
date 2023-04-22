@@ -12,7 +12,7 @@ body {
 }
 
 .navbar img {
-  width: 130px;
+  width: 13vw;
 }
 
 /* Estilos generales */
@@ -46,7 +46,7 @@ h1 {
 
 .seccion-titulo {
   font-size: 2rem;
-  padding: 15px 0;
+  padding: 0,9375em 0;
   font-family: 'Space Grotesk', sans-serif;
 }
 
@@ -74,7 +74,7 @@ h1 {
 
 /* Seccion Hero */
 .hero {
-  min-height: 450px;
+  min-height: 28.125em;
   text-align: center;
 }
 
@@ -83,8 +83,8 @@ h1 {
 }
 
 .hero-imagen-principal {
-  width: 840px;
-  border-radius: 15px;
+  width: 85vw;
+  border-radius: 0,9375em;
   padding-top: 4.5rem;
   padding-bottom: 1rem;
 }
@@ -106,24 +106,24 @@ h1 {
 
 /* Sobre Dr.J */
 .sobre-drj {
-  height: 800px;
-  padding: 10px;
+  height: 50em;
+  padding: 0.675em;
 }
 
 .sobre-drj .contenedor {
-  max-width: 750px;
+  max-width: 46.875em;
   text-align: justify;
 }
 
 /* Proyectos */
 .proyectos-recientes {
-  padding: 30px;
+  padding: 1.875em;
 }
 
 .proyectos-recientes img {
   height: 100%;
   width: 100%;
-  padding: 15px;
+  padding: 0.9375em;
   border-radius: 15px;
   display: block;
   transition: all 0.3s ease;
@@ -244,9 +244,6 @@ footer hr {
   font-family: 'Quicksand', sans-serif;
 }
 
-.iconos-redes-sociales {
-  padding: 3rem;
-}
 
 .iconos-redes-sociales a {
   width: 50px;
